@@ -59,9 +59,7 @@
       <table :class="$style['mainTable']">
         <thead :class="$style['tableauThead']">
           <tr :class="$style['tableauTrHeader']">
-            <th data-role="sort-header">
-              Id <span :class="$style['icon-arrow']">&UpArrow;</span>
-            </th>
+            
             <th></th>
             <th data-role="sort-header">
               Nom <span :class="$style['icon-arrow']">&UpArrow;</span>
@@ -89,7 +87,7 @@
         </thead>
         <tbody :class="$style['tableauTbody']">
           <tr v-for="member in members" :key="member._id" data-role="table-row">
-            <td>{{ member._id }}</td>
+          
             <td>
               <img :class="$style['tdImg']" src="images/Jeet Saru.jpg" alt="" />
             </td>
