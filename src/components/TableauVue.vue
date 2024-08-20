@@ -6,7 +6,7 @@
         <input
           style=""
           type="search"
-          placeholder="Search Data..."
+          placeholder="Recherche optimisé..."
           ref="searchInput "
           data-role="search-input"
         />
