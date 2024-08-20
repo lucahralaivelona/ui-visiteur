@@ -1,0 +1,18 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+  
+  body {
+    min-height: 100vh !important;
+    background: url(images/html_table.jpg) center / cover !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+ 
