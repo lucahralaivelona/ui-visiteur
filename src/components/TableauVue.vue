@@ -689,11 +689,9 @@ export default {
         [...table_rows]
           .sort((a, b) => {
             let first_row = a
-                .querySelectorAll(".tableauTbody td")
-                [column].textContent.toLowerCase(),
+                .querySelectorAll(".tableauTbody td")[column].textContent.toLowerCase(),
               second_row = b
-                .querySelectorAll(".tableauTbody td")
-                [column].textContent.toLowerCase();
+                .querySelectorAll(".tableauTbody td")[column].textContent.toLowerCase();
 
             return sort_asc
               ? first_row < second_row
