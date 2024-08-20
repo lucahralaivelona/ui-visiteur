@@ -428,7 +428,7 @@ export default {
     },
     getAllMembers() {
       axios
-        .get("https://gestionlocationvoiture.onrender.com/api/v1/visiteurs")
+        .get("https://visiteur.onrender.com/api/v1/visiteurs")
         .then((response) => {
           if (response.data.error) {
             this.errorMessage = response.data.message;
@@ -555,7 +555,7 @@ export default {
     saveMember() {
       axios
         .post(
-          "https://gestionlocationvoiture.onrender.com/api/v1/visiteurs",
+          "https://visiteur.onrender.com/api/v1/visiteurs",
           {
             // numVisiteur: this.newMember.numVisiteur,
             nom: this.newMember.nom,
@@ -591,7 +591,7 @@ export default {
     EditMember() {
       axios
         .put(
-          `https://gestionlocationvoiture.onrender.com/api/v1/visiteurs/${this.clickMember._id}`,
+          `https://visiteur.onrender.com/api/v1/visiteurs/${this.clickMember._id}`,
           {
             // numVisiteur: this.clickMember.numVisiteur,
             nom: this.clickMember.nom,
@@ -623,7 +623,7 @@ export default {
     deleteMember() {
       axios
         .delete(
-          `https://gestionlocationvoiture.onrender.com/api/v1/visiteurs/${this.clickMember._id}`
+          `https://visiteur.onrender.com/api/v1/visiteurs/${this.clickMember._id}`
         )
         .then((response) => {
           this.clickMember = {};
